@@ -26,10 +26,9 @@ The following steps were completed:
 3. **ADC + DMA:** Configured ADC pin(s) and DMA to transfer conversion results to memory without CPU intervention  
 4. **UART:** Configured UART for serial transmission of ADC results  
 5. **Code Generation:** Generated CubeMX initialization and HAL code
+6. **User Firmware Logic:** Edited the generated code to add aplication specific logic
 7. **Firmware Build:** Built the project manually using the command prompt with `make` and GCC ARM toolchain, producing `.elf` and object files  
 8. **Debugging:** Resolved minor compiler/HAL issues such as `readonly` keyword conflicts and compiler-specific adjustments  
-
-**Note:** No interaction with PuTTY or UART output verification was performed due to missing USB-UART bridge and ST-Link/VCP detection issues.
 
 ---
 
@@ -49,6 +48,18 @@ The following steps were completed:
 From the project root directory:
 
 make
+make clean
 
-```bash
+---
+
+## Hardware Testing Status
+
+- ST-Link detected by CubeProgrammer but Target MCU not detected (could not flash firmware)  
+- USB-UART bridge not available, so UART output with PuTTY could not be verified  
+- **Despite hardware issues, configured the peripherals and built the firnware successfully.**
+  
+---
+
+
 make
+
