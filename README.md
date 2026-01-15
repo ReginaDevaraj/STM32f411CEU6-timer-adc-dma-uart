@@ -1,4 +1,4 @@
-# STM32F411 Timer–ADC–DMA–UART Firmware
+# STM32 BlackPill (STM32F411CEU6): Timer–ADC–DMA–UART 
 
 ## Overview
 This repository contains my implementation of the STM32 Blackpill assignment involving periodic ADC sampling with DMA and UART transmission.  
@@ -60,6 +60,9 @@ make clean
   
 ---
 
+Screenshots of CubeMX configuration, build success, and hardware setup are in [`docs/images`](docs/images).
 
-make
+---
+
+
 
