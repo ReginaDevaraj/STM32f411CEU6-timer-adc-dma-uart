@@ -26,7 +26,7 @@ The following steps were completed:
 3. **ADC + DMA:** Configured ADC pin(s) and DMA to transfer conversion results to memory without CPU intervention  
 4. **UART:** Configured UART for serial transmission of ADC results  
 5. **Code Generation:** Generated CubeMX initialization and HAL code
-6. **User Firmware Logic:** Edited the generated code to add aplication specific logic
+6. **User Firmware Logic:** Edited the generated code to add application specific logic
 7. **Firmware Build:** Built the project manually using the command prompt with `make` and GCC ARM toolchain, producing `.elf` and object files  
 8. **Debugging:** Resolved minor compiler/HAL issues such as `readonly` keyword conflicts and compiler-specific adjustments  
 
@@ -47,8 +47,11 @@ The following steps were completed:
 ## Build Instructions
 From the project root directory:
 
-make
-make clean
+1. Build firmware: 
+   make
+
+2. (Optional) Clean build files:
+   make clean
 
 ---
 
@@ -63,6 +66,7 @@ make clean
 Screenshots of CubeMX configuration, build success, and hardware setup are in [`docs/images`](docs/images).
 
 ---
+
 
 
 
